@@ -7,18 +7,18 @@ app = Flask(__name__)
 
 cap1 = cv2.VideoCapture(0)
 if not cap1.isOpened():
-    print("CCTV1 ī�޶� ���� ����. ������ Ȯ���ϼ���.")
+    print("CCTV1 camera opened.")
     exit()
 
 def generate_frames(cap, label):
-    """ī�޶� �����ӿ� �ؽ�Ʈ�� �߰��ϰ� MJPEG ��Ʈ���� ����"""
+    
     while True:
         ret, frame = cap.read()
         if not ret:
-            print(f"{label} ī�޶󿡼� ������ �б� ����.")
+            print(f"{label} no frames.")
             break
 
-        # ���� �ð�
+    
         current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         # �� �߰� (���� ���)
@@ -32,7 +32,7 @@ def generate_frames(cap, label):
             1
         )
 
-        # �ð� �߰� (���� �ϴ�)
+   
         text_size = cv2.getTextSize(current_time, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 1)[0]
         text_x = frame.shape[1] - text_size[0] - 5
         text_y = frame.shape[0] - 5
@@ -46,11 +46,10 @@ def generate_frames(cap, label):
             1
         )
 
-        # JPEG ���ڵ�
+ 
         ret, buffer = cv2.imencode('.jpg', frame)
         frame = buffer.tobytes()
 
-        # MJPEG ��Ʈ���� ����
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
@@ -78,4 +77,4 @@ if __name__ == '__main__':
     finally:
         if cap1.isOpened():
             cap1.release()
-        print("CCTV1 ī�޶� ���ҽ� ���� �Ϸ�.")
+        print("CCTV server closed.")
