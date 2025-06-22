@@ -14,4 +14,6 @@
 void delay_us_DHT11(uint16_t us);
 void delay_us_ULTRA(uint16_t us);
 void delay_us_LCD(uint16_t us);
+void delay_us_STEPPER(uint16_t us);
+void delay_us_BUZZER(uint16_t us);
 #endif /* INC_DELAY_H_ */
