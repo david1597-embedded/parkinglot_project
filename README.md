@@ -1,7 +1,7 @@
 # 🚗 주차장 환경 감시 및 관리 시스템
 
 블로그를 통해 자세한 내용을 확인하세요!!
-> **프로젝트 링크:** [Velog 블로그 링크](https://velog.io/@david1597/%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1)
+> **프로젝트 링크:** [Velog 블로그 링크]((https://velog.io/@david1597/%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1)
 
 ## 🧰기술 스택
 ![C](https://img.shields.io/badge/Language-C-blue?logo=c)
