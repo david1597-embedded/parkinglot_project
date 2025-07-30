@@ -91,8 +91,9 @@ STM32F411RE 마이크로컨트롤러 기반의 스마트 주차 시스템으로,
 
 ---
 
-## 📷 시연 이미지/영상
+## 📷 시연 시스템
 
+<img width="1884" height="887" alt="image" src="https://github.com/user-attachments/assets/9e104946-6be6-4746-b5c4-7623656c10ff" />
 
 
 ---
@@ -136,7 +137,7 @@ STM32F411RE 마이크로컨트롤러 기반의 스마트 주차 시스템으로,
 
 ---
 
-##
+
 
 
 
